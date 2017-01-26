@@ -18,8 +18,8 @@ class LoginSpider(scrapy.Spider):
             meta = {'cookiejar' : response.meta['cookiejar']},
             formdata = {
                 'lsd': lsd, 
-                'email':'thuxky@gmail.com', 
-                'pass':'xky940702',
+                'email':'', 
+                'pass':'',
                 'lgnrnd':lgnrnd},
             callback = self.after_login
         )
