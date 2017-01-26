@@ -15,7 +15,7 @@ class LoginSpider(scrapy.Spider):
         print lgnrnd
         return scrapy.FormRequest.from_response(
             response,
-            formdata = {'lsd': lsd, 'email':'thuxky@gmail.com', 'pass':'xky940702'},
+            formdata = {'lsd': lsd, 'email':'', 'pass':''},
             callback = self.after_login
         )
 
